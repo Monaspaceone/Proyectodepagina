@@ -74,7 +74,7 @@
 
 .footer-links h4 {
      
-    
+    text-align: center;
     font-size: 14 px;
     color: #FFFFFF;
     margin-bottom: 25px;
@@ -136,7 +136,7 @@
     .map-container {
          
 
-
+        
         align-items: center;
     }
 
