@@ -6,6 +6,14 @@
 
 }
 
+
+/*Politicas de privacidad*/
+
+.privacy {
+    margin: 20px;
+    padding: 20px;
+}
+
 /* Locales*/
 
 .map-container {
@@ -145,7 +153,6 @@
         height: 250px ;
         overflow:hidden;
         padding-bottom:150px;
-    
         border: 1px solid #2e3741 ;
 
 
@@ -169,4 +176,3 @@
     } 
         
     }
-
