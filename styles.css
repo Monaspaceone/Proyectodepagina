@@ -27,6 +27,8 @@
 
 .map-image {
 
+    width: 400px;
+    height: 350px;
     overflow:hidden;
     padding-bottom:330px;
     position:relative;
