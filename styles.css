@@ -45,7 +45,24 @@
 }
 
 
+/*AYUDA*/
 
+.help-container{
+    
+    margin: 20px;
+    padding: 20px;
+}
+
+a[href^="#"] {
+    color: black; /* Cambia el color del texto a negro */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+
+a[href^="#"]:hover {
+    color: #00C3FF; 
+    
+}
 
 
 /* Footer */
