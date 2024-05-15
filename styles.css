@@ -47,10 +47,13 @@
 
 /*AYUDA*/
 
+
+
 .help-container{
     
-    margin: 30px;
-    padding: 30px;
+   
+        margin: 30px;
+        padding: 30px;   
 }
 
 a[href^="#"] {
@@ -97,16 +100,17 @@ a[href^="#"]:hover {
 
     width: 25%;
     padding: 0 15px;
+  
+    
 }
 
 .footer-links h4 {
      
-    text-align: center;
     font-size: 14 px;
     color: #FFFFFF;
     margin-bottom: 25px;
+    padding-left: 25px;
     font-weight: 500; 
-    border-bottom: 2px solid #00c3ff ;
     display: inline-block;
 }
 
@@ -193,5 +197,5 @@ a[href^="#"]:hover {
         margin-bottom: 30px;
 
     } 
-        
-    }
+    
+}
