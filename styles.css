@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     list-style: none; 
@@ -60,6 +60,7 @@ a[href^="#"] {
     color: black; /* Cambia el color del texto a negro */
     text-decoration: none; /* Elimina el subrayado */
     font-weight:bolder;
+    font-size: larger;
 }
 
 
@@ -110,13 +111,13 @@ a[href^="#"]:hover {
     font-size: 14 px;
     color: #FFFFFF;
     margin-bottom: 25px;
-    padding-left: 25px;
+    text-decoration: underline #00C3FF;
     font-weight: 500; 
     display: inline-block;
 }
 
 
-.footer-links ul li a {
+.footer-links p a {
     
     font-size: 15px;
     text-decoration: none;
@@ -128,7 +129,7 @@ a[href^="#"]:hover {
 }
 
 
-.footer-links ul li a:hover {
+.footer-links p a:hover {
     color: #00c3ff;
     padding-left: 6px; 
 
@@ -184,7 +185,6 @@ a[href^="#"]:hover {
 
 
 
-
     .footer-row {
 
         text-align: center;
@@ -200,3 +200,14 @@ a[href^="#"]:hover {
     } 
     
 }
+
+
+/*
+<select name="lista" id="">
+            <option>Hombre </option>
+            <option>Mujer</option>
+            <option>No-binario</option>
+        </select>
+
+        */
+
