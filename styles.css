@@ -59,6 +59,7 @@
 a[href^="#"] {
     color: black; /* Cambia el color del texto a negro */
     text-decoration: none; /* Elimina el subrayado */
+    font-weight:bolder;
 }
 
 
