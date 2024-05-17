@@ -19,6 +19,35 @@
     <link rel="stylesheet" href="estilos.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SJ  | Indumentaria informal</title>
+	<!-- Css-->
+
+<style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas de igual ancho, estandard */
+      grid-gap: 10px; /* gap between grid items */
+    }
+    
+    .item {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+	  border:2px #FFFFFF dotted;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantalla de tablet */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        grid-template-columns: 1fr; /* 1 columna en pantallas mas chicas */
+      }
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -51,7 +80,7 @@
                 <ul>
                     <li><a href="suscribite.html">Suscribite&nbsp;&nbsp;&nbsp;</a></li>
                     <li><a href="locales.html">Locales&nbsp;&nbsp;&nbsp; </a></li>
-                    <li><a href="ayuda.html">Ayuda&nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="help.html">Ayuda&nbsp;&nbsp;&nbsp;</a></li>
                 </ul>
             </div>
             
@@ -198,7 +227,45 @@
 
     <footer class="footer"> 
 
-       
+        <div class="containerfooter"> 
+
+            <div class="footer-row">
+
+
+                <div class="footer-links">
+
+                    <h4>Sobre Nosotros <h4> </h4>
+
+                    
+                        <p><a href="help.html">Contactanos</a></p>
+                        <p><a href="locales.html">Locales </a></p>
+                        <p><a href="privacy.html">Politicas de privacidad</a></p>
+                        
+                    
+                </div>
+
+            <div class="footer-links"> 
+
+                <h4>Servicios </h4>
+                   
+                    <p><a href="help.html">Ayuda </a> </p>
+                    <p><a href="">Suscribete</a></p>
+                   </ul>
+            </div>
+
+            <div class="footer-links">
+
+                  <h4>Siguenos </h4>
+
+                  <div class="social-link">
+                   <a href="#"><i class="fab fa-facebook-f"></i></a>
+                   <a href="#"><i class="fab fa-instagram"></i></a>
+                   <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>  
+
+            </div> 
+        </div>
 
     </footer>
 
