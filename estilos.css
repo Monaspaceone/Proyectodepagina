@@ -4,8 +4,17 @@ body
     padding: 0;
 }
 
+/*header
+{
+    /***** Para fijar el encabezamiento
+    position: fixed;
+    z-index: 10;
+}*/
 
-/*Linea de publicidad - marquesina */
+
+/*******************LINEA DE PUBLICIDAD - MARQUESINA ****************/
+/********************************************************************/
+
 .marquee
 {
     width: 100%;
@@ -40,16 +49,17 @@ body
     flex-shrink: 0;
 }
 
-/* MENU ICONOS DE NAVEGACION */
+/************** MENU ICONOS DE NAVEGACION ***************/
+/********************************************************/
 
 .header-icon-links 
 {
-    width: 100%;
+     /***************  width: 100%;*/
     height: 30px;
     padding: 5px;
-    background-color: lightgray;
     background-color:whitesmoke;
 }
+
 
 .header-icon-links ul
 {
@@ -63,11 +73,7 @@ body
 {
     display:inline-block;
 
-    
-    /*float:left;*/
 }
-
-
 
 .header-icon-links ul li a 
 {
@@ -79,17 +85,18 @@ body
 }
 
 /*MENU DE SELECCION DE ARTICULOS*/
-
 .nav-items {
     display: flex;
-    justify-content:space-between;   
+    justify-content:space-between;  
+    background-color:whitesmoke; 
+    border-bottom:darkgray solid 4px;
 }
-
 
 .nav-items {
-   /* background-color: #d4d4d4;  */
-    border-bottom:darkgray solid 2px;
-}
+    /* background-color: #d4d4d4;  */
+     border-bottom:darkgray solid 2px;
+ }
+ 
 
 .nav-logo
 {
@@ -101,8 +108,6 @@ body
     width: 90px;
     padding-left: 5px;
 }
-
-
 
 /*alinear a cada elemento uno al lado del otro*/
 .nav-menu 
@@ -119,11 +124,6 @@ body
     color: #00C3FF;
 }
 
-/*ocultar la hamburguesa
-.nav-toggle{
-    display:none;
-}*/
-
 /*eliminar los subrayados de la lista del menu*/
 .nav-menu li a
 {
@@ -133,9 +133,10 @@ body
 
 
 /*Estilos a los menu de navegacion*/
+
 .menu-item
 {
-    font-size: 12px;
+    font-size: medium;
     margin: 0 10px;
     line-height: 40px;
     text-transform: uppercase;
@@ -164,4 +165,120 @@ body
     color: black;
     font-weight: bold;
 }
+
+/***** Espacio de padding para cuando se fije el encabezamiento
+.productos
+{  
+   padding-top: 160px;
+}*/
+
+/************************FORMULARIO***************************/
+/************************************************************/
+
+h3{
+    text-align: center;
+}
+.main-formulario
+{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;  
+    margin: 0 auto;
+}
+
+.container-datos-form
+{
+    margin: 30 auto;
+    padding: 15px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+input{
+    border: #000 solid 1px;
+}
+
+input[type=text],[type=tel], input[type=email]
+{
+    width: 100%;
+    border-radius: 8px;
+    border:darkgray solid 2px;
+    height: 40px;
+}
+
+input[type=file]
+{
+    border-radius: 8px;
+    border:darkgray solid 2px;
+    height: 40px;
+}
+
+#genero
+{
+    border-radius: 8px;
+    border:2px solid darkgray;
+    width: 100%;
+    height: 40px;
+}
+
+input[type="date"]
+{
+    border-radius: 8px;
+    border:2px solid darkgray;
+    width: 100%;
+    height: 40px;
+}
+
+input[type="checkbox"]
+{
+    margin-right: 15px;
+    border-radius: 8px;
+    border:2px solid darkgray;
+    width: 26px;
+    height: 26px;
+}
+
+.dato{
+    padding: 10px 0;
+    width: 80%;
+    align-content: center;
+    font-size:small;
+    color: black;
+}
+
+.dato-foto{
+    text-align: center;
+    width: 90%;
+    align-content: center;
+    font-size:small;
+    color: black;
+}
+
+.boton{
+    margin: 0 auto;
+    padding: 5px;
+    border: black solid 2px;
+    border-radius: 8px;
+    background-color: black;
+    width: 100px;
+    color: white;
+    
+}
+
+
+.boton:hover{
+    background-color: #2e2e2e;
+    color:#ffffff;
+}
+
+/******************* MEDIA QUERIES*/
+
+
+@media(max-width: 990px) {
+
+
+   
+    }
 
