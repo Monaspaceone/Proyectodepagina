@@ -1,7 +1,7 @@
 /*******VALIDACION DEL FORMULARIO DE SUSCRIPCION *********/
 /******************************************************* */
 
-document.getElementById('archivo').addEventListener('change', function(){
+/*document.getElementById('archivo').addEventListener('change', function(){
   let url_elegido = document.getElementById("archivo").files[0].name;
   console.log(url_elegido);
   if(url_elegido)
@@ -10,7 +10,7 @@ document.getElementById('archivo').addEventListener('change', function(){
     }else {
       document.getElementById('foto').src = "imagenes/foto_perfil3.jpg";
     }
-});
+});*/
 
 function validateForm(event)
 {
@@ -24,7 +24,7 @@ function validateForm(event)
   if(name.trim() === "")
   {
     alert("Por favor ingresa tu nombre");
-    document.getElementById("nombre").focus();
+    /*document.getElementById("nombre").focus();*/
     return false; // EVITA QUE SE ENVIE EL FORMULARIO
   }
 
@@ -60,6 +60,17 @@ function validateForm(event)
   return true;
 
 }  
+
+document.getElementById('file-input').addEventListener('change', function(){
+  let url_elegido = document.getElementById("file-input").files[0].name;
+  console.log(url_elegido);
+  if(url_elegido)
+    {
+      document.getElementById('foto').src = "imagenes/"+url_elegido;
+    }else {
+      document.getElementById('foto').src = "imagenes/foto_perfil3.jpg";
+    }
+});
 
 
 document.getElementById("myForm").addEventListener("submit", validateForm);
