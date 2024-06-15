@@ -17,6 +17,7 @@ body
 
 .marquee
 {
+    
     width: 100%;
     height: 45px;
     background-color: black;
@@ -52,12 +53,12 @@ body
 /************** MENU ICONOS DE NAVEGACION ***************/
 /********************************************************/
 
-.header-icon-links 
-{
-     /***************  width: 100%;*/
-    height: 30px;
-    padding: 5px;
-    background-color:whitesmoke;
+.header-icon-nav {
+    width:100%;
+    height: 100px;
+    background-color: whitesmoke;
+    border-bottom:darkgray solid 2px;
+
 }
 
 
@@ -72,45 +73,45 @@ body
 .header-icon-links ul li
 {
     display:inline-block;
+    margin:0 .7em;
 
 }
 
 .header-icon-links ul li a 
 {
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: 500;
     text-decoration: none;
-    color:darkslategrey;
+    color:rgb(35, 34, 39);
     margin-bottom: 15px;
     transition: all .3s ease;
 }
 
-/*MENU DE SELECCION DE ARTICULOS*/
-.nav-items {
-    display: flex;
-    justify-content:space-between;  
-    background-color:whitesmoke; 
-    border-bottom:darkgray solid 4px;
+.header-icon-links ul li a:hover{
+    color: #00C3FF;
 }
 
-.nav-items {
-    /* background-color: #d4d4d4;  */
-     border-bottom:darkgray solid 2px;
- }
- 
+.nav-button {
+display:  none;
 
+}
+/*MENU DE SELECCION DE ARTICULOS*/
 .nav-logo
 {
-    width: 30%;
-    align-content: center;
+    position: absolute;
+    margin-top: -30px;
+    
+
 }
+
 
 #logo{
     width: 90px;
-    padding-left: 5px;
+    
 }
 
 /*alinear a cada elemento uno al lado del otro*/
-.nav-menu 
+.nav-menu ul
 {
     display: flex;
     list-style: none;
@@ -125,7 +126,7 @@ body
 }
 
 /*eliminar los subrayados de la lista del menu*/
-.nav-menu li a
+/*.nav-menu ul li a
 {
     text-decoration: none;    
     color: black;
@@ -136,7 +137,6 @@ body
 
 .menu-item
 {
-    font-size: medium;
     margin: 0 10px;
     line-height: 40px;
     text-transform: uppercase;
@@ -152,7 +152,17 @@ body
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.nav-buscar
+
+@media (max-width: 768px){
+
+    .menu-item{
+        
+    }
+
+
+}
+
+/*.nav-buscar
 {
     width: 20%;
     text-align:center;
@@ -165,6 +175,32 @@ body
     color: black;
     font-weight: bold;
 }
+
+
+
+@media screen and (max-width: 768px){
+
+  .header-icon-nav {
+     
+  }
+
+    
+
+
+  .header-icon-links ul{
+ 
+    
+    
+
+  }
+
+  .nav-menu {
+   
+  }
+}
+
+
+
 
 /***** Espacio de padding para cuando se fije el encabezamiento
 .productos
@@ -328,4 +364,3 @@ input[type="checkbox"]
         overflow:hidden;
     }
 }
-
