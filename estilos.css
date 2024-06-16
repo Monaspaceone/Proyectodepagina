@@ -58,6 +58,7 @@ body
     height: 100px;
     background-color: whitesmoke;
     border-bottom:darkgray solid 2px;
+    display: flex; 
 
 }
 
@@ -91,15 +92,12 @@ body
     color: #00C3FF;
 }
 
-.nav-button {
-display:  none;
 
-}
 /*MENU DE SELECCION DE ARTICULOS*/
 .nav-logo
 {
     position: absolute;
-    margin-top: -30px;
+    margin-top: 15px;
     
 
 }
@@ -111,12 +109,19 @@ display:  none;
 }
 
 /*alinear a cada elemento uno al lado del otro*/
+
+.nav-menu{
+
+    align-content: center;
+    
+}
 .nav-menu ul
 {
     display: flex;
     list-style: none;
     width: 50%;
     justify-content:space-evenly;
+    
 }
 
 
@@ -152,15 +157,86 @@ display:  none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.abrir-menu {
+    display:none; 
+}
 
-@media (max-width: 768px){
+@media screen and (max-width: 614px){
 
-    .menu-item{
+    .abrir-menu{
+
+        display: block;
+        right: 50px; 
+        border: 0; 
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color:#000;
+    }
+
+    .cerrar-menu {
         
+        display:block;
+        position: absolute;
+        right:50px; 
+        font-size: 1.75rem;
+        background-color: transparent;
+        border:0; 
+        color: #ffffff;
+        cursor: pointer;
+    }
+
+    .header-icon-links {
+
+        opacity: 0;
+        visibility: hidden; 
+    }
+    
+    .header-icon-links-visible{
+
+        opacity: 1;
+        visibility: visible; 
+    }
+    
+    .header-icon-links ul {
+        position:absolute;
+        top:20px;
+        right: 0;
+        bottom: 0;
+        background-color: #080808;
+        padding: 3rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    
+
+    }
+    .icon-links {
+      display: flex;
+      flex-direction: column;
+     
+    }
+    .header-icon-links .icon-links li a {
+
+        color: #ecececec;
+
+    }
+
+    .header-icon-links .icon-links li {
+        margin-bottom: 60px; 
     }
 
 
 }
+
+
+@media screen and (min-width:615px){
+    .cerrar-menu{
+    display: none;
+    }
+    
+}
+
+
+
 
 /*.nav-buscar
 {
@@ -178,26 +254,7 @@ display:  none;
 
 
 
-@media screen and (max-width: 768px){
 
-  .header-icon-nav {
-     
-  }
-
-    
-
-
-  .header-icon-links ul{
- 
-    
-    
-
-  }
-
-  .nav-menu {
-   
-  }
-}
 
 
 

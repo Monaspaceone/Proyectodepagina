@@ -24,15 +24,6 @@ let header=`<!-- Marquesina de propaganda -->
 
 <div class="header-icon-nav">
 
-    <div class="header-icon-links">
-        <ul>
-            <li><a href="suscribite.html">Suscribite</a></li>
-            <li><a href="locales.html">Locales</a></li>
-            <li><a href="help.html">Ayuda</a></li>
-        </ul>
-    </div>
-    
-    
     <div class="nav-logo">
          <a href="index.html"><img id="logo" src="imagenes/logosj.png" alt="Logo Indumentaria Informal"></a>
     
@@ -47,8 +38,50 @@ let header=`<!-- Marquesina de propaganda -->
    
     </div> 
        
+    <div class="header-icon-links" id="header-icon">
+    <ul class="icon-links">
+        <li><button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button> 
+        <li><a href="suscribite.html">Suscribite</a></li>
+        <li><a href="locales.html">Locales</a></li>
+        <li><a href="help.html">Ayuda</a></li>
+        <li><a href="#"> Ingresar </a></li>
+    </ul>
+</div>
+
+<button class="abrir-menu" id="abrir"><i class="bi bi-list"></i></button>
 
 </div>
-`
+
+
+`;
 
 document.querySelector(".header").innerHTML=header;
+
+
+const nav= document.querySelector("#header-icon");
+const abrir= document.querySelector("#abrir");
+const cerrar= document.querySelector("#cerrar"); 
+
+
+/*abrir.addEventListener(click, () => {
+    nav.classList.add("visible")
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible");
+});
+
+*/
+
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("header-icon-links-visible");
+    abrir.style.display = "none";
+    cerrar.style.display = "block";
+});
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("header-icon-links-visible");
+    abrir.style.display = "block";
+    cerrar.style.display = "none";
+});
