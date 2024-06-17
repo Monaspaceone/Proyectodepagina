@@ -167,12 +167,15 @@ body
 
         display: block;
         right: 50px; 
+        padding-right: 18px;
         border: 0; 
         font-size: 2rem;
         background-color: transparent;
         cursor: pointer;
         color:#000;
     }
+
+    
 
     .cerrar-menu {
         
@@ -199,11 +202,12 @@ body
     }
     
     .header-icon-links ul {
+
         position:absolute;
         top:20px;
         right: 0;
         bottom: 0;
-        background-color: #080808;
+        background-color: black;
         padding: 3rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     
